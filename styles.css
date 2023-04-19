@@ -1,0 +1,133 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  min-height: 100vh;
+}
+
+footer {
+  position: absolute;
+  font-size: 11px;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  padding: 175px 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  background-color: #f3eae3;
+}
+
+.overall-container {
+  display: inherit;
+  height: 450px;
+  width: 600px;
+}
+
+.content-container {
+  background-color: #ffffff;
+  border-radius: 0 10px 10px 0;
+}
+
+.content-container h1 {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+}
+
+.product-name {
+  margin-bottom: 30px;
+}
+
+.content-container h3 {
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.picture-container,
+.content-container {
+  width: 50%;
+}
+
+.overall-container .picture-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px 0 0 10px;
+}
+
+.content-container {
+  text-align: left;
+  padding: 35px 30px;
+}
+
+.content-container p {
+  letter-spacing: 1px;
+}
+
+body > main > div > div.content-container > p {
+  margin-bottom: 35px;
+}
+
+.content-container h3,
+.content-container p {
+  font-family: 'Montserrat', sans-serif;
+  color: #6b6d7c;
+  font-weight: 500;
+}
+
+.button {
+  background-color: #3d8168;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.button p {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.button img {
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #1a4031;
+  cursor: pointer;
+}
+
+p {
+  font-size: 14px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.price h1 {
+  margin-right: 25px;
+  color: #3d8168;
+}
+
+.price p {
+  text-decoration: line-through;
+}
