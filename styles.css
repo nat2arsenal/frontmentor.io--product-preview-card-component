@@ -10,6 +10,10 @@
 body {
   text-align: center;
   min-height: 100vh;
+  background-color: #f3eae3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -24,16 +28,7 @@ footer a {
 }
 
 main {
-  padding: 175px 420px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 100vh;
-  background-color: #f3eae3;
-}
-
-.overall-container {
-  display: inherit;
   height: 450px;
   width: 600px;
 }
@@ -63,11 +58,20 @@ main {
   width: 50%;
 }
 
-.overall-container .picture-container img {
+main .picture-container img:nth-child(1) {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 10px 0 0 10px;
+  display: block;
+}
+
+main .picture-container img:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+  display: none;
 }
 
 .content-container {
@@ -77,10 +81,8 @@ main {
 
 .content-container p {
   letter-spacing: 1px;
-}
-
-body > main > div > div.content-container > p {
-  margin-bottom: 35px;
+  line-height: 1.5em;
+  margin-bottom: 15px;
 }
 
 .content-container h3,
@@ -99,9 +101,11 @@ body > main > div > div.content-container > p {
   border-radius: 10px;
 }
 
-.button p {
+.button span {
   color: #ffffff;
   font-weight: bold;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .button img {
@@ -117,17 +121,42 @@ p {
   font-size: 14px;
 }
 
-.price {
+.price h1 {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.price h1 {
-  margin-right: 25px;
   color: #3d8168;
 }
 
-.price p {
+.price span {
+  margin-left: 25px;
   text-decoration: line-through;
+  font-size: 14px;
+  color: #6b6d7c;
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 25px 15px;
+    margin-bottom: 25px;
+  }
+
+  .picture-container,
+  .content-container {
+    width: 100%;
+  }
+
+  .content-container {
+    border-radius: 0 0 10px 10px;
+  }
+
+  div.picture-container > img:nth-child(1) {
+    display: none;
+  }
+
+  div.picture-container > img:nth-child(2) {
+    display: block;
+  }
 }
