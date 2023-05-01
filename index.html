@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -13,28 +12,29 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Product preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <main>
-      <div class="picture-container">
-        <img src="./images/image-product-desktop.jpg" alt="product-image" />
-        <img src="./images/image-product-mobile.jpg" alt="product-image" />
-      </div>
-      <div class="content-container">
-        <h3>PERFUME</h3>
-        <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
-        <p>
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="price">
-          <h1>$149.99<span>$169.99</span></h1>
+      <div class="container">
+        <div class="picture-container">
+          <img src="./images/image-product-desktop.jpg" alt="product-image" />
+          <img src="./images/image-product-mobile.jpg" alt="product-image" />
         </div>
-        <div class="button">
-          <img src="./images/icon-cart.svg" alt="cart-icon" />
-          <span>Add to Cart</span>
+        <div class="content-container">
+          <p class="category">PERFUME</p>
+          <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <h1 class="discounted-price">$149.99</h1>
+            <p class="original-price">$169.99</p>
+          </div>
+          <div class="button">
+            <img src="./images/icon-cart.svg" alt="cart-icon" />
+            <p><strong>Add to Cart</strong></p>
+          </div>
         </div>
       </div>
     </main>
